@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_vili.mk
+    $(LOCAL_DIR)/aosp_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_vili-user \
-    xtended_vili-userdebug \
-    xtended_vili-eng
+    aosp_vili-user \
+    aosp_vili-userdebug \
+    aosp_vili-eng
