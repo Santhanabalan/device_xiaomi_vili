@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_vili.mk
+    $(LOCAL_DIR)/syberia_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_vili-user \
-    aosp_vili-userdebug \
-    aosp_vili-eng
+    syberia_vili-user \
+    syberia_vili-userdebug \
+    syberia_vili-eng
