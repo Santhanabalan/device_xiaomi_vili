@@ -11,18 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vili device
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
-# Inherit some common Syberia OS stuff.
-$(call inherit-product, vendor/syberia/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-SYBERIA_MAINTAINER := Santhanabalan
-SYBERIA_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080 : Please change as per your device resolution
+
+# Inherit some common ColtOS stuff.
+
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+COLT_BUILD_MAINTAINER := Santhanabalan
+COLT_GAPPS := true
+
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := syberia_vili
+PRODUCT_NAME := colt_vili
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \

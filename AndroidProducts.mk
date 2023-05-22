@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_vili.mk
+    $(LOCAL_DIR)/colt_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_vili-user \
-    syberia_vili-userdebug \
-    syberia_vili-eng
+    colt_vili-user \
+    colt_vili-userdebug \
+    colt_vili-eng
