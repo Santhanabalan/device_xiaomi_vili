@@ -11,14 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vili device
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
-TARGET_BOOT_ANIMATION_RES := 1080 : Please change as per your device resolution
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common ColtOS stuff.
 
 $(call inherit-product, vendor/colt/config/common_full_phone.mk)
+COLT_BUILD_TYPE := UNOFFICIAL
 COLT_BUILD_MAINTAINER := Santhanabalan
-COLT_GAPPS := true
-
+WITH_GAPPS := true
+TARGET_INCLUDE_NGA := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
